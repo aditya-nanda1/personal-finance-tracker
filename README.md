@@ -1,5 +1,7 @@
 # Personal Finance Tracker (React + Vite)
 
+**🌐 Live Demo:** [https://amazing-ganache-84b1f9.netlify.app/](https://amazing-ganache-84b1f9.netlify.app/)
+
 A production-quality Personal Finance Tracker application that lets you track income, expenses, and per-category monthly budgets with a clean, responsive UI. Built as per the assignment requirements.
 
 ## ✨ Features
@@ -7,7 +9,7 @@ A production-quality Personal Finance Tracker application that lets you track in
 - Global Header & Footer with navigation (React Router)
 - **Dashboard** with four KPIs (Total Income, Total Expenses, Remaining Budget, Savings)
 - Interactive Recharts:
-  - Monthly Income/Expense Trend (line)
+  - Monthly Income/Expense Trend (bar)
   - Category-wise Expense Split (pie)
 - **Today's Expenses** table
 - **Date Filter** (applies to dashboard totals)
@@ -47,53 +49,3 @@ npm run dev
 # 3) Build for production
 npm run build
 npm run preview
-```
-
-## 📦 Deployment
-
-You can deploy on **Netlify** or **Vercel** easily by importing this repository.
-The app is a standard Vite+React project that builds with `npm run build` and serves `dist/`.
-
-Include your deployed link in this README under a "Live Demo" section.
-
-## 🧰 Project Structure
-
-```
-personal-finance-tracker/
-├─ src/
-│  ├─ components/
-│  ├─ context/
-│  ├─ pages/
-│  ├─ utils/
-│  ├─ main.jsx
-│  └─ App.jsx
-├─ index.html
-├─ package.json
-├─ vite.config.js
-├─ README.md
-└─ ...
-```
-
-## 🧪 Default Data
-
-The app ships with a few seed transactions and budgets to help you see charts and tables immediately (stored in `src/utils/defaultData.js`). Everything persists to `localStorage` with the key `pft_v1`.
-
-## ✅ Notes Mapped to Requirements
-
-- Pure React with functional components & hooks ✅
-- React Router for navigation ✅
-- Data persisted to localStorage ✅
-- Dashboard cards, charts, and today's expenses ✅
-- Transactions CRUD with sortable table ✅
-- Budgets with progress & overspend alerts ✅
-- Profile with currency switch and totals ✅
-- Toastify events for add/edit/delete & overspend ✅
-- Responsive design ✅
-- Prettier configured via `npm run format` ✅
-- Add some default data ✅
-
-> Deploy on Netlify/Vercel and add your live link here once done.
-
----
-
-Made with ❤️ for clean UI, accessibility, and performance.
